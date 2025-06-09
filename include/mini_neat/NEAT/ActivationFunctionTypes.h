@@ -1,11 +1,17 @@
-#ifndef AF_TYPES
-#define AF_TYPES
+#pragma once
+#include <cstdint>
 
-enum ActivationFunctionType {
+namespace mini_neat::neat
+{
+
+enum class ActivationFunctionType : uint8_t 
+{
+    NONE,
     RELU,
     SIGMOID,
     TANH,
-    NONE
 };
 
-#endif
+}
+
+

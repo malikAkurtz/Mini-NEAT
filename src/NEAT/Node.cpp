@@ -5,7 +5,7 @@ NodeGene::NodeGene(int node_id, NodeType node_type)
     : node_id(node_id), node_type(node_type) {};
 
 
-Node::Node(NodeGene node_gene) 
+Node::Node(NodeGene& node_gene) 
     : node_id(node_gene.node_id), node_type(node_gene.node_type) {};
 
 // double Node::calculateNodeOutput(const std::vector<double>& input_vector)

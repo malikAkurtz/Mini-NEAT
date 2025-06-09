@@ -1,10 +1,14 @@
 #pragma once
-
 #include <vector>
-#include "../NodeType.h"
-#include "../ActivationFunctionTypes.h"
-#include "ActivationFunctions.h"
-#include "Connection.h"
+#include <string>
+
+#include <mini_neat/NEAT/NodeType.h>
+#include <cstdint>
+
+namespace mini_neat::neat
+{
+    enum class ActivationFunctionType : uint8_t;
+    class Connection;
 
 struct NodeGene
 {
@@ -25,7 +29,7 @@ public:
     std::vector<Connection> connections_in;
     std::vector<double> outputs;
 
-    Node(NodeGene node_gene);
+    Node(NodeGene& node_gene);
 
     // double calculateNodeOutput(const std::vector<double>& input_vector);
 
@@ -35,3 +39,5 @@ public:
 
     void setActivation(ActivationFunctionType activation);
 };
+
+}

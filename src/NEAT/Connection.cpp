@@ -16,5 +16,4 @@ std::string ConnectionGene::toString() const
 Connection::Connection(ConnectionGene connection_gene) 
     : node_in(connection_gene.node_in), node_out(connection_gene.node_out), weight(connection_gene.weight), enabled(connection_gene.enabled), innovation_number(connection_gene.innovation_number) {};
 
-
-
+    

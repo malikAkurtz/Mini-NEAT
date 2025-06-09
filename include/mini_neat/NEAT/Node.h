@@ -1,5 +1,4 @@
-#ifndef NODE_H
-#define NODE_H
+#pragma once
 
 #include <vector>
 #include "../NodeType.h"
@@ -36,5 +35,3 @@ public:
 
     void setActivation(ActivationFunctionType activation);
 };
-
-#endif

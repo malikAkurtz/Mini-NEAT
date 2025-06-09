@@ -1,9 +1,7 @@
-.env
-teak-environs-428403-r1-13b20cb353f4.json
-__pycache__/
-*.py[cod]
-*.o
-output.txt
-out
-bot_key_pair.pem
+Build
 src/main
+.venv
+graph_node.py
+mini_neat.zip
+output.txt
+tree.txt
